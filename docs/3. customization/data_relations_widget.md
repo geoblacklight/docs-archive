@@ -1,5 +1,7 @@
 ## Using the Data Relations Widget
 
+###**This documentation is for GeoBlacklight versions 1.3 to versions 3.7 only. Beginning with version 4.0, GeoBlacklight performs this function by default.**
+
 Beginning with v1.3.0, GeoBlacklight supports simple visualization of parent/children relations between records in a catalog. When records that were derived from a parent record point back to that parent, it enables a toolbar widget that displays the relation.
 
 To make use of this, we have introduced support for a "source" field in GeoBlacklight metadata records. The actual key of this field is arbitrary –– just make sure that `Settings.FIELDS.SOURCE` properly reflects what you want to use –– but the GeoBlacklight schema allocates the Dublin Core field `dc_source_sm` for this purpose.

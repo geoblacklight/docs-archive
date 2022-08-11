@@ -7,7 +7,7 @@ The 2020 Geo4LibCamp featured a [workshop](https://kgjenkins.github.io/openindex
 
 For a conceptual introduction to index maps (i.e. what are index maps anyway?), see this [explanation](https://kgjenkins.github.io/openindexmaps-workshop/index-maps).
 
-Here are examples of "live" index maps hosted within the GeoBlacklight instances of, [NYU](https://geo.nyu.edu/catalog/nyu-2451-38684), [Cornell](https://cugir.library.cornell.edu/catalog/cugir-008187), and [Stanford](https://earthworks.stanford.edu/catalog/stanford-qb865wf0229).  
+Here are examples of "live" index maps hosted within the GeoBlacklight instances of [Cornell](https://cugir.library.cornell.edu/catalog/cugir-008187) and [Stanford](https://earthworks.stanford.edu/catalog/stanford-qb865wf0229).  
 
 ### Making Index Maps
 
@@ -37,13 +37,13 @@ The index map preview can be customized by overriding the Handlebars template `i
 
 ### Metadata for Index Maps
 
-Here are some considerations to keep in mind when generating metadata for index maps:
+Here are some recommendations to keep in mind when generating metadata for index maps:
 
-* The `layer_geom_type_s` field in the index map's metadata record should reflect the geometry type of the scanned map, aerial photo, LiDAR dataset etc. (i.e. the underlying data for which the index map serves as a contextual guide). It should not indicate the geom type of the index map itself.
+* The Geometry Type/Resource Type field (`layer_geom_type_s` in Metadata 1.0 or `gbl_resourceType_sm` in OpenGeoMetadata Aardvark) in the index map's metadata record should reflect the geometry type of the scanned map, aerial photo, LiDAR dataset etc. (i.e. the underlying data for which the index map serves as a contextual guide). It should not indicate the geom type of the index map itself.
 
-* The `dc_subject_sm` field in the index map's metadata should include "index map" (in addition to other keywords relevant to the underlying data collection).
+* The Subject field (`dc_subject_sm` or `dct_subject_sm)`) in the index map's metadata should include "index map" (in addition to other keywords relevant to the underlying data collection).
 
-* The `dc_source_sm` field in the metadata records of the underlying data should should reference the index map, since the index map can be seen as a "source dataset" that offers a guide to the broader collection.
+* The Source field (`dc_source_sm` or `dct_source_sm`) in the metadata records of the underlying data should should reference the index map, since the index map can be seen as a "source dataset" that offers a guide to the broader collection.
 
 ### Committing GeoBlacklight Index Maps to the OpenIndexMaps Github repository
 
@@ -53,6 +53,6 @@ Once your map has been committed to your OpenIndexMaps repository, you will want
 
 To get the blob url, click the "Raw" link on your map's Github page, and copy the url of the page to which you are taken upon clicking this link.
 
-The `dct_references_s` section of the index map's GeoBlacklight metadata contains relevant external links, and are organized as a serialized JSON array of key/value pairs (for more information on this section in the GeoBlacklight metadata schema, see [here](https://github.com/geoblacklight/geoblacklight/blob/master/schema/schema-commentary.md)). In this case, the blob url which you copied (above) will be the value associated with the OpenIndexMaps url (which is the key).
+The `dct_references_s` section of the index map's GeoBlacklight metadata contains relevant external links, and are organized as a serialized JSON array of key/value pairs (for more information on this section in the GeoBlacklight metadata schema, see [here](https://opengeometadata.org/docs/more-about-references#reference-uris)). In this case, the blob url which you copied (above) will be the value associated with the OpenIndexMaps url (which is the key).
 
 The following site, from the GeoBlacklight team at [NYU](https://github.com/NYULibraries/sdr-documentation/blob/master/metadata-management.md#Adding-a-key-value-URL-in-the-references-field-to-one-or-more-records), provides a script that adds references to existing GeoBlacklight metadata records. This script can be adapted to add the OpenIndexMaps/Blob-url key-value pair into the metadata's `dct_references_s` section.
