@@ -1,6 +1,6 @@
 # GeoBlacklight Quick Start
-This guide covers getting up and running with GeoBlacklight.
-After reading this guide, you will know:
+This guide covers the quickest way to get up and running with GeoBlacklight, including:
+
  - How to install GeoBlacklight on your local computer.
  - How to create a new application.
  - How to add and index geospatial content.   

@@ -8,7 +8,7 @@ After reading this guide, you will know:
     <li> How to see how those changes look in a browser.  
 </ul>
 
-For a more in-depth guide to development, see the [tutorials section](/docs/tutorials/tutorials/).
+For a more in-depth guide to development, see the [tutorials](https://geoblacklight.org/tutorials.html).
 
 ## Dependencies
 
