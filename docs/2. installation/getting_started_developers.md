@@ -1,23 +1,26 @@
 
 # Getting Started for Developers
 
-After reading this guide, you will know:
- - How to install a local instance of GeoBlacklight for Development purposes.
- - How to make small changes to the application.
- - How to see how those changes look in a browser.   
+After reading this guide, you will know:  
+<ul>
+    <li> How to install a local instance of GeoBlacklight for Development purposes.  
+    <li> How to make small changes to the application.  
+    <li> How to see how those changes look in a browser.  
+</ul>
 
-For a more in-depth guide to development, see the [series of tutorials on the GeoBlacklight project website.](https://geoblacklight.org/tutorials.html)
+For a more in-depth guide to development, see the [tutorials section](/docs/tutorials/tutorials/).
 
 ## Dependencies
 
-Software you should have installed on your development computer
-* Ruby > 2.6.6 (Note: There is a known issue with Ruby 3.0.0, please avoid for now.)
-* Rails > 6.0
-* Git
-* Java > 1.8 (Download JDK for local Solr server)
-* Node.js > 14.15 LTS
-* Yarn > 1.13
-
+Software you should have installed on your development computer  
+<ul>
+    <li> Ruby > 2.6.6 (Note: There is a known issue with Ruby 3.0.0, please avoid for now.)
+    <li> Rails > 6.0  
+    <li> Git
+    <li> Java > 1.8 (Download JDK for local Solr server)  
+    <li> Node.js > 14.15 LTS
+    <li> Yarn > 1.13  
+</ul>
 ---------
 
 ## Installation for Development
@@ -77,7 +80,7 @@ Cross-browser testing provided by:
 ## Helpful Development Tools
 
 ### Version Managers
-Using version management tools for compatible versions of Ruby ([rvm](https://rvm.io/), [rbenv](http://rbenv.org/), [asdf](https://asdf-vm.com/)) and Node ([nvm](https://github.com/nvm-sh/nvm/blob/master/README.md), [asdf](https://asdf-vm.com/)) can make development easier.
+Using version management tools for compatible versions of Ruby ([rvm](https://rvm.io/), [rbenv](https://github.com/rbenv/rbenv/), [asdf](https://asdf-vm.com/)) and Node ([nvm](https://github.com/nvm-sh/nvm/blob/master/README.md), [asdf](https://asdf-vm.com/)) can make development easier.
 
 #### asdf
 Many developers like asdf because you can manage versions for Ruby and Node in a single utility. For developers who use asdf, it is helpful to add a `.tool-versions` file for each app.
