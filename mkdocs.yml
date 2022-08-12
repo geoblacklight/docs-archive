@@ -1,6 +1,6 @@
 site_name: GeoBlacklight Documentation
 site_url: https://geoblacklight.org/docs
-repo_url: https://github.com/geoblacklight/docs
+#repo_url: https://github.com/geoblacklight/docs
 theme: 
      name: readthedocs
      logo: img/geoblacklight-logo-small@2x.png
