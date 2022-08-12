@@ -1,2 +1,13 @@
 site_name: GeoBlacklight Documentation
-theme: readthedocs
+site_url: https://geoblacklight.org/docs
+repo_url: https://github.com/geoblacklight/docs
+theme: 
+     name: readthedocs
+     logo: img/geoblacklight-logo-small@2x.png
+     extra_css: docs/extra.css
+     highlightjs: true
+     titles_only: true
+     include_homepage_in_sidebar: false
+
+extra_css:
+  - extra.css
