@@ -1,6 +1,6 @@
 ## Upgrading to GeoBlacklight 4.0
 
-**Please note: GeoBlacklight v4.0.0 is currently a pre-production, release candidate.** The B1G/BTAA Geoportal has been running GBLv4 in production for many months, so the codebase is quite stable. A final v4.0.0 release will be released in the near future (~August/September 2022).
+**Please note: GeoBlacklight v4.0.0 is currently a pre-production, release candidate.** The [BTAA Geoportal](https://geo.btaa.org) has been running GBLv4 in production for many months, so the codebase is quite stable. A final v4.0.0 release will be released in September 2022.
 
 ### Upgrade Steps
 
