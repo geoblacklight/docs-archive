@@ -7,30 +7,33 @@ This guide covers the quickest way to get up and running with GeoBlacklight, inc
 
 ## Installation
 
-  To bootstrap a new GeoBlacklight Rails application using the template:
+  Bootstrap a new GeoBlacklight Ruby on Rails application using the template script:
+
+```bash
+DISABLE_SPRING=1 rails new app-name -m https://raw.githubusercontent.com/geoblacklight/geoblacklight/main/template.rb
 ```
-$ DISABLE_SPRING=1 rails new app-name -m https://raw.githubusercontent.com/geoblacklight/geoblacklight/main/template.rb
-```
-  Then:
-```
+  Then run the `geoblacklight:server` rake task to run the application:
+
+```bash
 $ cd app-name
-$ rake geoblacklight:server
+$ bundle exec rake geoblacklight:server
 ```
-## Configuration
 
-  To configure your own instances of GeoBlacklight, follow these steps:
+* Visit your GeoBlacklight application at: [http://localhost:3000](http://localhost:3000)
+* Visit the Solr admin panel at: [http://localhost:8983/solr/#/blacklight-core](http://localhost:8983/solr/#/blacklight-core)
 
-  1. Build a [Solr](http://lucene.apache.org/solr/) 4.7+ index with JSON documents in the [OpenGeoMetadata schema](https://opengeometadata.org). The [GeoCombine](https://github.com/OpenGeoMetadata/GeoCombine) project has converters from FGDC and ISO 19139 to GeoBlacklight. You can use these as a starting point to generate GeoBlacklight documents.
+### Index Example Data
 
-  2. Configure your GeoBlacklight application's `config/blacklight.yml` to point to your Solr index.
+Index the GeoBlacklight project's test fixtures via:
 
-  3. Configure your `config/environments/` and `app/controllers/catalog_controller.rb` as needed.
+```bash
+$ bundle exec rake "geoblacklight:index:seed[:remote]"
+```
 
-  4. `rails server` to run GeoBlacklight.
+Additional Aardvark metadata can be harvested via [GeoCombine](https://github.com/OpenGeoMetadata/GeoCombine):
 
-  **Please note: GeoBlacklight v4.0.0 is currently a pre-production, alpha release.** A final v4.0.0 release will be released in the future.
-
-  ## Aardvark Metadata Schema by Default
-  This release is the first to feature GeoBlacklight's new Aardvark metadata schema by default. Find additional information and details about Aardvark at [OpenGeoMetadata](https://opengeometadata.org).
-
+```bash
+$ bundle exec rake "geocombine:clone[geobtaa]"
+$ bundle exec rake "geocombine:index"
+```
 ---

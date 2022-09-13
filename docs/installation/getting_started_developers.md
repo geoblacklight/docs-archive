@@ -10,35 +10,38 @@ After reading this guide, you will know:
 
 For a more in-depth guide to development, see the [tutorials](https://geoblacklight.org/tutorials.html).
 
+---------
+
 ## Dependencies
 
 Software you should have installed on your development computer  
 <ul>
-    <li> Ruby > 2.6.6 (Note: There is a known issue with Ruby 3.0.0, please avoid for now.)
-    <li> Rails > 6.0  
-    <li> Git
-    <li> Java > 1.8 (Download JDK for local Solr server)  
-    <li> Node.js > 14.15 LTS
-    <li> Yarn > 1.13  
+    <li>Ruby > 3.0.0</li>
+    <li>Git > 2 </li>
+    <li>Java > JRE version 11 or higher</li>
 </ul>
 ---------
 
 ## Installation for Development
 
-To set up a working space, navigate to where you'd like to put your test GeoBlacklight app and then clone the repository
+To set up a working space, navigate to where you'd like to put your test GeoBlacklight app and then clone the repository:
 ```
 $ git clone git@github.com:geoblacklight/geoblacklight.git
 ```
 Once the files are downloaded, run
 ```
+$ cd geoblacklight
 $ bundle exec rake geoblacklight:server
 ```
 
-If you run into issues running this rake task, try removing your `Gemfile.lock` file and removing the test app with `rm -R .internal_test_app`. Then run `bundle install` before running the above command again.
-
 This command executes everything needed to run a local version of GeoBlacklight. In order to see the version you have running, open a web browser and go to [http://localhost:3000/](http://localhost:3000/). You should be able to navigate around the site. Remember that your Rails server is running locally, so to stop it, run ^C (ctrl + c).
 
-Refer to the Customization pages of the wiki for instructions on making look and feel changes. Refer to the Metadata section of the wiki for instructions on testing new records.
+<div class="note" markdown="1">
+<h6>Troubleshooting</h6>
+If you run into issues running this rake task, try removing your `Gemfile.lock` file and removing the test app with `rm -R .internal_test_app`. Then run `bundle install` before running the above command again.
+</div>
+
+Refer to the Customization pages of this website for instructions on making look and feel changes. Refer to the [Metadata](http://localhost:8000/docs/overview/metadata/) section for instructions on testing new records.
 
 ### Running Solr and Rails server separately
 
