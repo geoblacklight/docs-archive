@@ -29,11 +29,4 @@ Index the GeoBlacklight project's test fixtures via:
 ```bash
 $ bundle exec rake "geoblacklight:index:seed[:remote]"
 ```
-
-Additional Aardvark metadata can be harvested via [GeoCombine](https://github.com/OpenGeoMetadata/GeoCombine):
-
-```bash
-$ bundle exec rake "geocombine:clone[geobtaa]"
-$ bundle exec rake "geocombine:index"
-```
 ---
