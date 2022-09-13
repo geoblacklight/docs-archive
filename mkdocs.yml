@@ -1,7 +1,7 @@
 site_name: GeoBlacklight Documentation
 site_url: https://geoblacklight.org/docs
 #repo_url: https://github.com/geoblacklight/docs
-theme: 
+theme:
      name: readthedocs
      logo: img/geoblacklight-logo-small@2x.png
      extra_css: docs/extra.css
@@ -31,10 +31,13 @@ nav:
      - 'Accessing Raster and Vector Layers in GeoPackages': 'customization/accessing_geopackages.md'
      - 'Adding SVG Icons': 'customization/adding_svg_icons.md'
      - 'Rendering Line Breaks or HTML from the Description Field': 'customization/rendering_html_from_description.md'
+- Running in Production:
+     - 'Hardware Recommendations': 'production/hardware_recommendations.md'
+     - 'Implementation Recommendations': 'production/implementation_recommendations.md'
+     - 'Periodic Maintenance': 'production/periodic_maintenance.md'
 - Upgrading:
      - 'Upgrading to Version 4.0': 'upgrading/Upgrading_to_version_4_0.md'
      - 'Upgrading to Version 2.0': 'upgrading/Upgrading_to_version_2_0.md'
 
 #- Tutorials:
 #     - 'Tutorials': 'tutorials/tutorials.md'
-
