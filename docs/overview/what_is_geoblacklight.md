@@ -21,7 +21,7 @@ We are actively looking for community input and development partners. View our p
 * IIIF scanned map viewer
 * Download the original file (Shapefile, GeoTIFF, GeoJSON, Esri Geodatabase, GeoPackage, or other SQLite database)
 * Download generated Shapefile/GeoTIFF/KML/GeoJSON
-* Built-in sample Solr 4.7+ index
+* Built-in sample Solr 8.3+ index
 * Built on top of [Blacklight platform](https://projectblacklight.org)
   * Search history
   * Bookmark layers

@@ -4,7 +4,7 @@
 ### OGC GeoPackage
 [GeoPackage](http://www.geopackage.org/) is an encoding standard specified and maintained by the [Open Geospatial Consortium](http://www.opengeospatial.org/), primarily directed towards the structure of SQLite geodatabases.  As the GeoPackage standard provides standardization for vector features, tile matrix sets, and raster maps, it may be used as a container for either [vector or raster spatial data sets](https://www.ordnancesurvey.co.uk/support/understanding-gis/raster-vector.html).
 
-To indicate the a download is a “GeoPackage”, add this term to the [`dct_format_s` field]([OpenGeoMetadata schema](https://opengeometadata.org/docs/ogm-aardvark/format)).
+To indicate the download is a “GeoPackage”, add this term to the `dct_format_s` [OpenGeoMetadata schema](https://opengeometadata.org/docs/ogm-aardvark/format) field.
 
 ### GIS Web Services
 GeoPackages may be rendered using the layer viewer by providing the URL of a standard Web Map Service ([WMS](http://www.opengeospatial.org/standards/wms)) or Web Feature Service ([WFS](http://www.opengeospatial.org/standards/wfs)) within the `dct_references_s` field of [the schema](https://opengeometadata.org/docs/ogm-aardvark/references).
