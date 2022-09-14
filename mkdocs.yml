@@ -26,6 +26,7 @@ nav:
      - 'Using the Data Relations Widget': 'customization/data_relations_widget.md'
      - 'Configuring Index Maps': 'customization/index_maps.md'
      - 'Switching Default Basemap': 'customization/default_basemap.md'
+     - 'Dynamic Basemap Switching': 'customization/dynamic_basemap_switching.md'
      - 'Adding Support for Item Images': 'customization/item_images.md'
      - 'Adding Mirador IIIF Manifest Viewer': 'customization/adding_mirador_viewer.md'
      - 'Accessing Raster and Vector Layers in GeoPackages': 'customization/accessing_geopackages.md'
