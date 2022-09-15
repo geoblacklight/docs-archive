@@ -32,6 +32,7 @@ nav:
      - 'Accessing Raster and Vector Layers in GeoPackages': 'customization/accessing_geopackages.md'
      - 'Adding SVG Icons': 'customization/adding_svg_icons.md'
      - 'Rendering Line Breaks or HTML from the Description Field': 'customization/rendering_html_from_description.md'
+     - 'Homepage Map Centroid Clusters': 'customization/homepage_map_centroid_clusters'
 - Running in Production:
      - 'Hardware Recommendations': 'production/hardware_recommendations.md'
      - 'Implementation Recommendations': 'production/implementation_recommendations.md'

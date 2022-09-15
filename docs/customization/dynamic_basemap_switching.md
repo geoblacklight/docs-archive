@@ -1,5 +1,9 @@
 # Dynamic Basemap Switching
 
+<div class="note">
+  <strong>Please note: </strong> This kind of customization may potentially make future GeoBlacklight upgrades more difficult. If you choose to implement this feature, you will need to be extra vigilant when GBL JavaScript files change in future releases.
+</div>
+
 Need a dynamic basemap switcher? You can customize GeoBlacklight to add support for Leaflet's basemap switching:
 
 <img width="500" alt="basemap-switcher" src="https://user-images.githubusercontent.com/69827/189993636-e2bfb61a-0ddd-439e-b4a5-44088edb9079.gif"/>
