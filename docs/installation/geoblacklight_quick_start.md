@@ -24,7 +24,7 @@ $ bundle exec rake geoblacklight:server
 
 ### Index Example Data
 
-Index the GeoBlacklight project's test fixtures via:
+With your Solr server and Rails server already running (via the `geoblacklight:server` rake task above), open a new terminal window and index the GeoBlacklight project's test fixtures via:
 
 ```bash
 $ bundle exec rake "geoblacklight:index:seed[:remote]"
