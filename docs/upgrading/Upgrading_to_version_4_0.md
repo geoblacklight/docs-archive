@@ -1,7 +1,5 @@
 ## Upgrading to GeoBlacklight 4.0
 
-**Please note: GeoBlacklight v4.0.0 is currently a pre-production, release candidate.** The [BTAA Geoportal](https://geo.btaa.org) has been running GBLv4 in production for many months, so the codebase is quite stable. A final v4.0.0 release will be released in September 2022.
-
 ### Upgrade Steps
 
 There are several steps to complete this major release upgrade. Detailed notes follow for each of the following upgrade steps:
@@ -270,7 +268,7 @@ Adds the "map" split view for catalog#index
 ```
 ###### Facet Fields / config.add_facet_field(s)
 
-These are all now mapped to Aardvark fields. Note: 'icon_facet' partials are now replaced by the `item_component: Geoblacklight::IconFacetItemComponent` 
+These are all now mapped to Aardvark fields. Note: 'icon_facet' partials are now replaced by the `item_component: Geoblacklight::IconFacetItemComponent`
 
 ```ruby
     # FACETS
@@ -411,4 +409,3 @@ The `_homepage_text.html.erb` view partial has been updated to use a view compon
       </div>
     </div>
 ```
-
