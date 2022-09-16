@@ -7,7 +7,7 @@ The [GeoBlacklight Sidecar Images](https://github.com/geoblacklight/geoblackligh
 
 GBL Sidecar Images requires:
 
-* [Ruby on Rails 5.2](https://weblog.rubyonrails.org/releases/)
+* [Ruby on Rails 5.2](https://rubyonrails.org/category/releases)
 * [ImageMagick](https://github.com/ImageMagick/ImageMagick)
 
 A background job processor like [Sidekiq](https://github.com/mperham/sidekiq) is optional, but highly recommended.
