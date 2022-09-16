@@ -92,7 +92,7 @@ You should now have a working fullscreen button in your application!
 
 ### Adding a Search Control
 
-Customizing Leaflet has certain limitations which can fortunately be overcome through the usage of plugins developed by third parties.  Leaflet provides the following listing of plugins for the library: https://leafletjs.com/plugins.html#search--popups
+Customizing Leaflet has certain limitations which can fortunately be overcome through the usage of plugins developed by third parties.  Leaflet provides the following listing of plugins for the library: [https://leafletjs.com/plugins.html#search--popups](https://leafletjs.com/plugins.html#search--popups)
 
 #### Downloading Leaflet Plugins
 Firstly, in order to integrate a plugin, the JavaScript source file(s) are downloaded into the `vendor/assets/javascripts` directory, where names are all in the lower case, with whitespace being replaced by dash characters (e. g. `vendor/assets/javascripts/esri-leaflet.js`)
