@@ -10,4 +10,4 @@ GeoBlacklight comes with a default open-source basemap, Carto's Positron, but it
 * Flat Blue
 * Midnight Commander
 
-In order to toggle between them, all you need to do is go to the [catalog-controller.rb](https://github.com/geoblacklight/geoblacklight/blob/master/lib/generators/geoblacklight/templates/catalog_controller.rb) file in your application and replace the config.basemap_provider value. The valid values are in the comments above this line as a helpful reminder.
+In order to toggle between them, all you need to do is go to the [catalog_controller.rb](https://github.com/geoblacklight/geoblacklight/blob/master/lib/generators/geoblacklight/templates/catalog_controller.rb) file in your application and replace the config.basemap_provider value. The valid values are in the comments above this line as a helpful reminder.
