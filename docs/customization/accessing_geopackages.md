@@ -15,4 +15,4 @@ Unfortunately (as stated above), exporting into GeoPackage in GeoServer requires
 
 #### ArcMap and ArcGIS Pro Support
 For those using Esri's ArcMap, the process of connecting to a GeoPackage data source is identical to that of connecting to any SQLite database: https://desktop.arcgis.com/en/arcmap/latest/manage-data/databases/connect-sqlite.htm.  This is the case also for users of ArcGIS Pro: [https://pro.arcgis.com/en/pro-app/help/data/databases/work-with-sqlite-databases-in-arcgis-pro.htm
-]()
+](https://pro.arcgis.com/en/pro-app/help/data/databases/work-with-sqlite-databases-in-arcgis-pro.htm)
