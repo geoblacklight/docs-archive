@@ -2,14 +2,14 @@
 
 ### Mirador
 
-[Mirador](https://projectmirador.org/) is an open source IIIF image and IIIF manifest viewer. Core GeoBlacklight contributors (Jack!) have contributed significantly to Mirador and the new Mirador v3 release (currently in alpha).
+[Mirador](https://projectmirador.org/) is an open source IIIF image and IIIF manifest viewer. Core GeoBlacklight contributors have contributed significantly to Mirador.
 
 ### Install
 
 Add the Mirador 3 javascript and stylesheet assets to your project. If you are using Yarn, you can just add mirador via:
 
 ```bash
-yarn add mirador@^3.0.0-alpha.16
+yarn add mirador
 ```
 
 Or you can edit your package.json file like so, and run:
@@ -24,7 +24,7 @@ Or you can edit your package.json file like so, and run:
     "bloodhound-js": "^1.2.3",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.0",
-    "mirador": "^3.0.0-alpha.16",
+    "mirador": "^3.3.0",
     "readmore-js": "^3.0.0-beta-1",
     "typeahead.js": "^0.11.1",
     "lodash": "^4.17.13",
@@ -158,4 +158,4 @@ end
 
 ### Enjoy!
 
-Add a [IIIF Manifest-based fixture to your spec fixtures](https://raw.githubusercontent.com/BTAA-Geospatial-Data-Project/geoportal/develop/spec/fixtures/solr_documents/b1g_iiif_manifest_book.json) and reload the application (rake geoblacklight:server).
+Add a [IIIF Manifest-based fixture to your spec fixtures](https://raw.githubusercontent.com/geobtaa/geoportal/develop/test/fixtures/files/btaa_documents/b1g_iiif_manifest_book.json) and reload the application (rake geoblacklight:server).
