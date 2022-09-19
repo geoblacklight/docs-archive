@@ -5,15 +5,15 @@ theme:
      name: readthedocs
      logo: img/geoblacklight-logo-small@2x.png
      extra_css: docs/extra.css
-     extra_javascript: docs/extra.js
      highlightjs: true
      titles_only: true
      include_homepage_in_sidebar: true
+     analytics:
+        gtag: G-RFL265H4YX
 
 extra_css:
   - extra.css
-extra_javascript:
-  - extra.js
+  
 nav:
 - GeoBlacklight Homepage: 'https://geoblacklight.org'
 - Overview:
