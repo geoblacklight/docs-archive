@@ -20,6 +20,7 @@ nav:
      - 'What is GeoBlacklight': 'overview/what_is_geoblacklight.md'
      - 'Contributing to GeoBlacklight': 'overview/contributing.md'
      - 'Metadata': 'overview/metadata.md'
+     - 'Releases': 'overview/releases.md'
 - Installation:
      - 'Quick Start': 'installation/geoblacklight_quick_start.md'
      - 'Getting Started - Developers Guide': 'installation/getting_started_developers.md'
