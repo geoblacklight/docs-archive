@@ -60,13 +60,13 @@ GeoBlacklight release and technology dependency matrix.
 
 ### Production RDBMS
 * __PostgreSQL (Recommended)__
-* Potential adopters of GEOMG
+    - For potential adopters of GEOMG
 
 ### Background Queue
 * _Not Required_
 * __Sidekiq + Redis (Recommended)__
-* Potential adopters of GEOMG
-* Potential future GBL enhancement: Background Downloads
+    - For potential adopters of GEOMG
+    - Potential future GBL enhancement: Background Downloads
 
 ### GeoServer
 * _Not Required_
