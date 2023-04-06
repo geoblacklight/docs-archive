@@ -30,9 +30,9 @@ GBL's Solr configuration files are updated to reflect the Aardvark metadata elem
 
 Migrate your Solr documents from the GBL v1.0 metadata standard to OGM Aardvark. GBL community documentation and migration tools are listed below:
 
-* [OGM's Guide for Upgrading Metadata](https://opengeometadata.org/docs/upgrading)
-* [Full GBL 1.0 to OGM Aardvark Crosswalk](https://opengeometadata.org/docs/upgrading#full-crosswalk-table)
-* [Tools and Techniques for Upgrading](https://opengeometadata.org/docs/upgrading#tools-and-techniques-for-upgrading)
+* [OGM's Guide for Upgrading Metadata](https://opengeometadata.org/upgrade-metadata/)
+* [Full GBL 1.0 to OGM Aardvark Crosswalk](https://opengeometadata.org/aardvark-gbl-1-crosswalk/)
+* [Tools and Techniques for Upgrading](https://opengeometadata.org/scripts/)
 * [gbl2aardvark: convert GeoBlacklight 1.0 json files to Aardvark
 ](https://kgjenkins.github.io/gbl2aardvark/)
 
