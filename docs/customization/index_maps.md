@@ -53,6 +53,6 @@ Once your map has been committed to your OpenIndexMaps repository, you will want
 
 To get the blob url, click the "Raw" link on your map's Github page, and copy the url of the page to which you are taken upon clicking this link.
 
-The `dct_references_s` section of the index map's GeoBlacklight metadata contains relevant external links, and are organized as a serialized JSON array of key/value pairs (for more information on this section in the GeoBlacklight metadata schema, see [here](https://opengeometadata.org/docs/more-about-references#reference-uris)). In this case, the blob url which you copied (above) will be the value associated with the OpenIndexMaps url (which is the key).
+The `dct_references_s` section of the index map's GeoBlacklight metadata contains relevant external links, and are organized as a serialized JSON array of key/value pairs (for more information on this section in the GeoBlacklight metadata schema, see [here](https://opengeometadata.org/configure-external-links/)). In this case, the blob url which you copied (above) will be the value associated with the OpenIndexMaps url (which is the key).
 
 The following site, from the GeoBlacklight team at [NYU](https://github.com/NYULibraries/sdr-documentation/blob/master/metadata-management.md#Adding-a-key-value-URL-in-the-references-field-to-one-or-more-records), provides a script that adds references to existing GeoBlacklight metadata records. This script can be adapted to add the OpenIndexMaps/Blob-url key-value pair into the metadata's `dct_references_s` section.
