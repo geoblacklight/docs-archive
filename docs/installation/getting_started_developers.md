@@ -55,6 +55,38 @@ $ rake engine_cart:server
 ```
 Once the server is running, you can open a web browser and visit the URL it prompts, usually [http://localhost:8983/solr/#/blacklight-core](http://localhost:8983/solr/#/blacklight-core) to see the admin interface of your test instance of Solr. As before, remember that ^C (ctrl + c) stops the server.
 
+### Using an External SOLR Instance
+
+In some cases you may need to install SOLR through a different method than described above, or link your GeoBlacklight installation to an existing SOLR installation. You can learn more about installing SOLR in the [Apache documentation](https://solr.apache.org/guide/solr/latest/deployment-guide/installing-solr.html).
+
+#### Configure the SOLR Core
+
+Once you have SOLR installed, you will need to create a new core and configure it for GeoBlacklight. How you create the core may depend on your installation method, but will likely be something like
+
+```bash
+$ bin/solr -c blacklight-core
+```
+
+Now rename/remove the core's `conf` directory and replace it with the `solr/conf` directory from GeoBlacklight: [github.com/geoblacklight/geoblacklight/tree/v4.0.0/solr/conf](https://github.com/geoblacklight/geoblacklight/tree/v4.0.0/solr/conf).
+
+You can alter the core's configuration here as well, generally in the `schema.xml` file.
+
+You can find the installation location of your SOLR instance through the web admin interface: http://yourdomain.com:8983/solr/
+
+#### Set `SOLR_URL` Environment Variable
+
+GeoBlacklight will use the `SOLR_URL` environment variable (if present) to look for SOLR. For example, assuming your core is named `blacklight-core`:
+
+```bash
+$ export SOLR_URL=http://yourdomain.com:8983/solr/blacklight-core
+```
+
+Now run the rails server and your external SOLR will be used
+
+```bash
+$ rake engine_cart:server
+```
+
 ## Unit Testing
 
 ### Running all the tests
