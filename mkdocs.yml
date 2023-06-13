@@ -11,6 +11,10 @@ theme:
      analytics:
         gtag: G-RFL265H4YX
 
+markdown_extensions:
+  - admonition
+  - def_list
+
 extra_css:
   - extra.css
   
@@ -24,6 +28,8 @@ nav:
 - Installation:
      - 'Quick Start': 'installation/geoblacklight_quick_start.md'
      - 'Getting Started - Developers Guide': 'installation/getting_started_developers.md'
+- Configuration:
+     - 'Settings Reference': 'configuration/settings.md'
 - Customization:
      - 'Adding Leaflet Controls': 'customization/adding_leaflet_controls.md'
      - 'Configuring Leaflet for Retina Displays': 'customization/leaflet_retina_configuration.md'
