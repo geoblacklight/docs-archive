@@ -171,8 +171,8 @@ GeoBlacklight uses Leaflet to power its web map interfaces. This setting contain
 
 A few common customizations of GeoBlacklight involve updates to this setting:
 
-- [Adding Leaflet Controls](../../adding_leaflet_controls.md)
-- [Configuring Leaflet for Retina Displays](../../leaflet_retina_configuration.md)
+- [Adding Leaflet Controls](../customization/adding_leaflet_controls.md)
+- [Configuring Leaflet for Retina Displays](../customization/leaflet_retina_configuration.md)
 
 ### `HELP_TEXT`
 
