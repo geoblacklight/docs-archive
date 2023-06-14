@@ -138,15 +138,19 @@ icon
 label
 : Label from the locale string translations file
 
-For example, the `MEMBER_OF` relationship would be defined like so:
+inverse
+: The inverse relationship to this one, used to generate bidirectional linkages
+
+For example, the `MEMBER_OF_ANCESTORS` relationship would be defined like so (note that the `MEMBER_OF_DESCENDANTS` relationship would also need to be defined as it is referenced in the `inverse` property):
 
 ```
 RELATIONSHIPS_SHOWN:
-  MEMBER_OF:
+  MEMBER_OF_ANCESTORS:
     field: pcdm_memberOf_sm
-    query_type: ancestors
     icon: parent-item
-    label: geoblacklight.relations.member_of
+    inverse: :MEMBER_OF_DESCENDANTS
+    label: geoblacklight.relations.member_of_ancestors
+    query_type: ancestors
 ```
 
 ### `WMS_PARAMS`
@@ -171,8 +175,8 @@ GeoBlacklight uses Leaflet to power its web map interfaces. This setting contain
 
 A few common customizations of GeoBlacklight involve updates to this setting:
 
-- [Adding Leaflet Controls](../../adding_leaflet_controls.md)
-- [Configuring Leaflet for Retina Displays](../../leaflet_retina_configuration.md)
+- [Adding Leaflet Controls](../customization/adding_leaflet_controls.md)
+- [Configuring Leaflet for Retina Displays](../customization/leaflet_retina_configuration.md)
 
 ### `HELP_TEXT`
 
