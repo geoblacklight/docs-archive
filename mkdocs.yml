@@ -30,6 +30,7 @@ nav:
      - 'Getting Started - Developers Guide': 'installation/getting_started_developers.md'
 - Configuration:
      - 'Settings Reference': 'configuration/settings.md'
+     - 'Updating the Catalog Controller': 'configuration/catalog_controller.md'
 - Customization:
      - 'Adding Leaflet Controls': 'customization/adding_leaflet_controls.md'
      - 'Configuring Leaflet for Retina Displays': 'customization/leaflet_retina_configuration.md'
