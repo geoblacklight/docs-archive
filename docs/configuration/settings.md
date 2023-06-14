@@ -50,10 +50,7 @@ All metadata fields are linked with their respective identifiers in the SOLR ind
 
 ### `INSTITUTION`
 
-This setting helps determine access to records. If your `INSTITUTION` value matches the `schema_provider_s` value in a record, *and* that record has a `dct_accessRights_s` value of "Restricted", then the record will be not be restricted in your installation. Conversely, if you are sharing records with other institutional GeoBlacklight instances, use "Restricted" to limit their access to your record.
-
-!!! warning
-    Need to confirm exactly how this works, the description above isn't really consistent with the OGM description of the [Access Rights](https://opengeometadata.org/ogm-aardvark/#access-rights) field (see Commentary section).
+This setting should hold the name of your institution, and can be used to help determine access to restricted records. In some GeoBlacklight implementations, for example, when a restricted record's `schema_provider_s` field matches `Settings.INSTITUTION`, authenticated users will be granted full access.
 
 ### `METADATA_SHOWN`
 
