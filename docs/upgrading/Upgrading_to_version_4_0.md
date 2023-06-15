@@ -242,6 +242,8 @@ LEAFLET:
 
 Besides the `settings.yml` configuration changes above, the `catalog_controller.rb` file holds a great deal of application configuration and it needs to be updated for the new `Settings.FIELD` values.
 
+It may be helpful to review the diff of changes to catalog_controller.rb from [v3.8.0 to v4.0.0](https://github.com/geoblacklight/geoblacklight/compare/v3.8.0...v4.0.0#diff-9e99abd5b848670740a1015f4d03aeaa747a747f0ae3cc3177d152975c017e81)
+
 Here is a list of GBL v4 [catalog_controller.rb](https://github.com/geoblacklight/geoblacklight/blob/main/lib/generators/geoblacklight/templates/catalog_controller.rb) changes:
 
 ###### Default Solr Params / config.default_document_solr_params
@@ -302,6 +304,24 @@ Our map-based search feature is now run via a series of (Geo)Blacklight class ex
     # filter_class         - Defines how to add/remove facet from query
     # label                - Defines the label used in contstraints container
     config.add_facet_field Settings.FIELDS.GEOMETRY, item_presenter: Geoblacklight::BboxItemPresenter, filter_class: Geoblacklight::BboxFilterField, filter_query_builder: Geoblacklight::BboxFilterQuery, within_boost: Settings.BBOX_WITHIN_BOOST, overlap_boost: Settings.OVERLAP_RATIO_BOOST, overlap_field: Settings.FIELDS.OVERLAP_FIELD, label: 'Bounding Box'
+```
+
+###### Item Relationship Facets
+
+To display item-to-item relationships, add this block below:
+
+```ruby
+    # Item Relationship Facets
+    # * Not displayed to end user (show: false)
+    # * Must be present for relationship "Browse all 4 records" links to work
+    # * Label value becomes the search contraint filter name
+    config.add_facet_field Settings.FIELDS.MEMBER_OF, label: "Member Of", show: false
+    config.add_facet_field Settings.FIELDS.IS_PART_OF, label: "Is Part Of", show: false
+    config.add_facet_field Settings.FIELDS.RELATION, label: "Related", show: false
+    config.add_facet_field Settings.FIELDS.REPLACES, label: "Replaces", show: false
+    config.add_facet_field Settings.FIELDS.IS_REPLACED_BY, label: "Is Replaced By", show: false
+    config.add_facet_field Settings.FIELDS.SOURCE, label: "Source", show: false
+    config.add_facet_field Settings.FIELDS.VERSION, label: "Is Version Of", show: false
 ```
 
 ###### Index Fields / config.add_index_field(s)
