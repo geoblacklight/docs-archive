@@ -1,56 +1,74 @@
 site_name: GeoBlacklight Documentation
 site_url: https://geoblacklight.org/docs
-#repo_url: https://github.com/geoblacklight/docs
+repo_url: https://github.com/geoblacklight/docs
+
 theme:
-     name: readthedocs
-     logo: img/geoblacklight-logo-small@2x.png
-     extra_css: docs/extra.css
-     highlightjs: true
-     titles_only: true
-     include_homepage_in_sidebar: true
-     analytics:
-        gtag: G-RFL265H4YX
+      name: material
+      palette:
+            primary: white
+      features:
+            - navigation.tabs
+            - navigation.sections
+      logo: img/geoblacklight-logo-small@2x.png
+      extra_css: docs/extra.css
+      highlightjs: true
+      titles_only: true
+      include_homepage_in_sidebar: true
+      analytics:
+            gtag: G-RFL265H4YX
 
 markdown_extensions:
   - admonition
   - def_list
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_css:
   - extra.css
+extra:
+      homepage: https://geoblacklight.org
   
 nav:
-- GeoBlacklight Homepage: 'https://geoblacklight.org'
-- Overview:
-     - 'What is GeoBlacklight': 'overview/what_is_geoblacklight.md'
-     - 'Contributing to GeoBlacklight': 'overview/contributing.md'
-     - 'Metadata': 'overview/metadata.md'
-     - 'Releases': 'overview/releases.md'
-- Installation:
-     - 'Quick Start': 'installation/geoblacklight_quick_start.md'
-     - 'Getting Started - Developers Guide': 'installation/getting_started_developers.md'
-- Configuration:
-     - 'Settings Reference': 'configuration/settings.md'
-     - 'Updating the Catalog Controller': 'configuration/catalog_controller.md'
-- Customization:
-     - 'Adding Leaflet Controls': 'customization/adding_leaflet_controls.md'
-     - 'Configuring Leaflet for Retina Displays': 'customization/leaflet_retina_configuration.md'
-     - 'Using the Data Relations Widget': 'customization/data_relations_widget.md'
-     - 'Configuring Index Maps': 'customization/index_maps.md'
-     - 'Switching Default Basemap': 'customization/default_basemap.md'
-     - 'Dynamic Basemap Switching': 'customization/dynamic_basemap_switching.md'
-     - 'Adding Support for Item Images': 'customization/item_images.md'
-     - 'Adding Mirador IIIF Manifest Viewer': 'customization/adding_mirador_viewer.md'
-     - 'Accessing Raster and Vector Layers in GeoPackages': 'customization/accessing_geopackages.md'
-     - 'Adding SVG Icons': 'customization/adding_svg_icons.md'
-     - 'Rendering Line Breaks or HTML from the Description Field': 'customization/rendering_html_from_description.md'
-     - 'Homepage Map Centroid Clusters': 'customization/homepage_map_centroid_clusters.md'
-- Running in Production:
-     - 'Hardware Recommendations': 'production/hardware_recommendations.md'
-     - 'Implementation Recommendations': 'production/implementation_recommendations.md'
-     - 'Periodic Maintenance': 'production/periodic_maintenance.md'
-- Upgrading:
-     - 'Upgrading to Version 4.0': 'upgrading/Upgrading_to_version_4_0.md'
-     - 'Upgrading to Version 2.0': 'upgrading/Upgrading_to_version_2_0.md'
+- 'Docs Home': 'index.md'
 
-#- Tutorials:
-#     - 'Tutorials': 'tutorials/tutorials.md'
+- Tutorials and Getting Started:
+     - 'Quick Start': 'geoblacklight_quick_start.md'
+     - 'Getting Started - Developers Guide': 'getting_started_developers.md'
+      
+- How To Guides:
+      - Upgrade:
+            - 'Upgrade to Version 4.0': 'upgrade_version_4_0.md'
+            - 'Upgrade to Version 2.0': 'upgrade_version_2_0.md'
+            
+      - Leaflet:
+            - 'Add Centroid Clusters': 'homepage_map_centroid_clusters.md'
+            - 'Add Leaflet Controls': 'adding_leaflet_controls.md'
+            - 'Configure Leaflet for Retina Displays': 'leaflet_retina_configuration.md'
+            - 'Switch Default Basemap': 'default_basemap.md'
+            - 'Dynamic Basemap Switching': 'dynamic_basemap_switching.md'
+            
+      - Images and Icons:
+            - 'Add Mirador IIIF Viewer': 'adding_mirador_viewer.md'
+            - 'Add Support for Item Images': 'item_images.md'
+            - 'Add SVG Icons': 'adding_svg_icons.md'
+            
+      - Metadata Display:
+            - 'Add Data Relations Widget': 'data_relations_widget.md'
+            - 'Render HTML in Metadata Fields': 'rendering_html_from_description.md'
+      
+- Reference:
+      - 'Software Releases': 'releases.md'
+      - 'Metadata': 'metadata.md'
+      - 'Settings': 'settings.md'
+      - 'Catalog Controller': 'catalog_controller.md'
+      - 'Index Maps': 'index_maps.md'
+      - 'GeoPackages': 'accessing_geopackages.md' 
+      - 'Contributing': 'contributing.md'
+            
+- Recommendations:
+      - 'Hardware Recommendations': 'hardware_recommendations.md'
+      - 'Implementation Recommendations': 'implementation_recommendations.md'
+      - 'Periodic Maintenance': 'periodic_maintenance.md'
+      

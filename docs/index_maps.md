@@ -1,4 +1,4 @@
-## Configuring Index Maps for Use in GeoBlacklight
+##  Index Maps in GeoBlacklight
 
 
 ### Index Maps: Introduction

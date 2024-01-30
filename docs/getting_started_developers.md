@@ -39,7 +39,7 @@ This command executes everything needed to run a local version of GeoBlacklight.
 If you run into issues running this rake task, try removing your `Gemfile.lock` file and removing the test app with `rm -R .internal_test_app`. Then run `bundle install` before running the above command again.
 </div>
 
-Refer to the Customization pages of this website for instructions on making look and feel changes. Refer to the [Metadata](http://localhost:8000/docs/overview/metadata/) section for instructions on testing new records.
+Refer to the How To Guides of this website for instructions on making look and feel changes. 
 
 ### Running Solr and Rails server separately
 

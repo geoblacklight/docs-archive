@@ -1,6 +1,6 @@
 # Hardware Recommendations
 
-Running GeoBlacklight in production has modest hardware requirements. Your local IT system administrators and DevOps personnel will be critial in shaping your deployment environment.
+Running GeoBlacklight in production has modest hardware requirements. Your local IT system administrators and DevOps personnel will be critical in shaping your deployment environment.
 
 ## Example Production Environments
 
