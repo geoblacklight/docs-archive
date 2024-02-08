@@ -1,3 +1,11 @@
+# Archived repo
+
+This repo was used for technical documentation of GeoBlacklight from ~2022-2024. Its content was merged into geoblacklight.github.io in February 2024.
+
+
+
+
+
 ## This repository is for documentation of the [GeoBlacklight](https://geoblacklight.org) application.
 
 ### Local Build
